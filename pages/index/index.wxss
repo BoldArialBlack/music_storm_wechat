@@ -1,0 +1,36 @@
+/**index.wxss**/
+.page-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.item{
+  padding: 20rpx 40rpx;
+  border-bottom: 2rpx solid #eee;
+}
+
+.meta {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  font-size: 34rpx;
+}
+
+.meta text{
+  display: inline-block;
+  margin-left: 20rpx;
+}
+
+.avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.content {
+  display: block;
+  margin: 20rpx;
+}

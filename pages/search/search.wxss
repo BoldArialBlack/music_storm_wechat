@@ -1,0 +1,45 @@
+/* pages/search/search.wxss */
+/**index.wxss**/
+.page-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+.item{
+  padding: 20rpx;
+  border-bottom: 2rpx solid #eee;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.meta{
+  display: block;
+  align-items: center;
+}
+
+.meta text{
+  display: block;
+}
+
+text{
+  font-size: 34rpx;
+  margin: 20rpx;
+}
+
+.title{
+  color: #000;
+}
+
+.sub-title{
+  color: #999;
+}
+
+.logo {
+  width: 64rpx;
+  height: 64rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}

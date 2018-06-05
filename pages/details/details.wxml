@@ -1,0 +1,21 @@
+<!--pages/square/square.wxml-->
+<scroll-view class='page-body' scroll-y='true'>
+  <view class='post'>
+      <view class='meta'>
+        <image class='avatar' src='{{post.userAvatar}}'></image>
+        <text class='title'>{{post.userName}}</text>
+      </view>
+      <text class='content'>{{post.msg}}</text>
+      <view class='meta'>
+        <text class='likes' bindtap='addLikes'>{{post.likes}}个喜欢</text>
+        <text class='comments'>{{post.commentNum}}条评论</text>
+        <text class='time'>{{post.time}}</text>
+      </view>
+  </view>
+  <block wx:for="{{comments}}" wx:key="id">
+    <view class='item'>
+      <text class='title'>{{item.userName}}</text>
+      <text class='comment-content'>{{item.content}}</text>
+    </view>
+  </block>
+</scroll-view>

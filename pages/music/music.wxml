@@ -1,0 +1,2 @@
+<!--pages/music/music.wxml-->
+<web-view src="{{url}}"></web-view>

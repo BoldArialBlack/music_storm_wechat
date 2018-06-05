@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class='page-header'>
+  <text class='page-header-text'> {{title}}</text>
+</view>
+<scroll-view class='page-body' scroll-y='true'>
+  <navigator url='../details/details?msgId={{item.msgId}}' wx:for="{{posts}}" wx:key="item.msgId">
+    <view class='item'>
+      <view class='meta'>
+        <image class='avatar' src='{{item.userAvatar}}'></image>
+        <text class='title'>{{item.userName}}</text>
+      </view>
+      <text class='content'>{{item.msg}}</text>
+      <view class='meta'>
+        <text class='likes'>{{item.likes}}个喜欢</text>
+        <text class='comments'>{{item.commentNum}}条评论</text>
+        <text class='time'>{{item.time}}</text>
+      </view>
+    </view>
+  </navigator>
+</scroll-view>

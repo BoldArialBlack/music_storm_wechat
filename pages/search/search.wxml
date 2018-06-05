@@ -1,0 +1,16 @@
+<!--pages/search/search.wxml-->
+<view class='page-header'>
+  <input class='page-header-text' placeholder='输入搜索关键词' auto-focus='true' bindchange='search'/>
+</view>
+<scroll-view class='page-body' scroll-y='true'>
+  <navigator url='../music/music?to={{item.url}}' wx:for='{{musics}}' wx:key='id'>
+    <view class='item'>
+      <view class='meta'>
+        <text class='title'>{{item.musicName}}</text>
+        <text class='sub-title'>{{item.artistName}} - {{item.albumName}}</text>
+      </view>
+      <text>{{item.length}}</text>
+      <image class='logo' src='{{item.thirdParty}}'></image>
+    </view>
+  </navigator>
+</scroll-view>
